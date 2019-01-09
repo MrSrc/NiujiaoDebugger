@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\PubLib">
+      <UniqueIdentifier>{0b9f6c15-f9ac-4649-9daa-f41e3f33b315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\PubLib">
+      <UniqueIdentifier>{bd411d36-a3ba-4a50-87b8-411d2e706126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml文件">
+      <UniqueIdentifier>{99231ca3-f6e9-4da3-a792-3a8ce72ea3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DbgEngine">
+      <UniqueIdentifier>{37853c40-a499-4b4f-af6d-63fcd714e31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DbgEngine">
+      <UniqueIdentifier>{188c0b1c-45e0-47c8-a0c4-53a9784e23d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="niujiao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\ImageInfo.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Disasm_one.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Disasm_three_3a.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Disasm_three_38.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Disasm_two.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Executor.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\asm.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PubLib\StrTrie.h">
+      <Filter>头文件\PubLib</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\Disasm.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\define.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgEngine\asm_struct.h">
+      <Filter>头文件\DbgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PubLib\PyInter.h">
+      <Filter>头文件\PubLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PubLib\NiujiaoMod.h">
+      <Filter>头文件\PubLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PubLib\PeObj.h">
+      <Filter>头文件\PubLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PubLib\AsmObj.h">
+      <Filter>头文件\PubLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="niujiao.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgEngine\ImageInfo.cpp">
+      <Filter>源文件\DbgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgEngine\Executor.cpp">
+      <Filter>源文件\DbgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgEngine\asm.cpp">
+      <Filter>源文件\DbgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PubLib\StrTrie.cpp">
+      <Filter>源文件\PubLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgEngine\Disasm.cpp">
+      <Filter>源文件\DbgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PubLib\PyInter.cpp">
+      <Filter>源文件\PubLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PubLib\NiujiaoMod.cpp">
+      <Filter>源文件\PubLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PubLib\PeObj.cpp">
+      <Filter>源文件\PubLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PubLib\AsmObj.cpp">
+      <Filter>源文件\PubLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\output\attachproc.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\MainWnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\openfile.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\peinfo.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\registerwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\scrollbar.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\uisetting.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\属性列表.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\logwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\bpwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\handlewnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\modulewnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\threadwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\disasmwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\memwnd.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\disasm_list_menu.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+    <Xml Include="..\output\testasm.xml">
+      <Filter>xml文件</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

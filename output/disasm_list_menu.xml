@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  width="100" >
+  <Font ID="1234" name="微软雅黑" size="12" bold="false" default="true" />
+  <Default Font="1234" name="Menu" shared="true" value="itemfont=&quot;8&quot; bordersize=&quot;1&quot; borderround=&quot;2,2&quot; bordercolor=&quot;0x303132&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;30,0,0,0&quot;  itemhottextcolor=&quot;0xFFFF0000&quot; itemselectedbkcolor=&quot;0xFF338ACA&quot;" /> 
+  <Menu>
+    <MenuElement name="menu_name" text="menu_text" />
+  </Menu>
+</Window>

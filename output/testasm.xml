@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="600,500" sizebox="8,8,8,8" caption="0,0,0,60" roundcorner="8,8">
+  <Include source="scrollbar.xml" />
+  <VerticalLayout  bkcolor="0xffacadac"> 
+    <HorizontalLayout height="50" bkcolor="0xff407d94">
+      <Button text="汇编窗口" mouse="false"  textcolor="0xdddddddd" padding="10,10,0,10" height="30" width="80"></Button>
+      <Button name="close_btn" text="关闭" width="50" height="18" padding="450,30,10,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+    </HorizontalLayout>
+    <HorizontalLayout height="4" bkcolor="0xff407d94" bkcolor2="0xffffffff" padding="0,0,0,0"></HorizontalLayout>
+    <HorizontalLayout height="40" padding="0,20,0,0">
+      <Edit name="asm_edit" bkcolor="0xffffffff" width="480" padding="10,0,0,0"></Edit>
+      <Button padding="20,5,0,5" bkcolor="0xffdb9c4f" name="asm_test" text="汇编" height="30" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+    </HorizontalLayout>
+    <List name="asm_list" itemvlinesize="1" itemvlinecolor="0xffbbbbbb" bkcolor="0xffacadac" vscrollbar="true"  virtuallist="true" inset="4,2,4,2" padding="5,10,5,10">
+      <ListHeader scaleheader="true" bkcolor="0xffbbbbbb" childpadding="1">
+        <ListHeaderItem scale="20%" text="序号" bkcolor="0xff898989" />
+        <ListHeaderItem scale="80%" text="结果" bkcolor="0xff898989" />
+      </ListHeader>
+    </List>
+  </VerticalLayout>
+</Window>

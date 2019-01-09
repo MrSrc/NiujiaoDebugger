@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,400"  caption="0,0,0,100" roundcorner="8,8">
+  <VerticalLayout>
+    <HorizontalLayout bkcolor="0xffe2dbbe" height="40" >
+      <Option name="1" userdata="uis_tab" text="常规"  width="114" selected="true" selectedbkcolor="0xff4cb4e7" group="UIS" />
+      <Option name="2" userdata="uis_tab" text="默认"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+      <Option name="3" userdata="uis_tab" text="对话框"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+      <Option name="4" userdata="uis_tab" text="目录"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+      <Option name="5" userdata="uis_tab" text="字体"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+      <Option name="6" userdata="uis_tab" text="颜色"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+      <Option name="7" userdata="uis_tab" text="代码高亮"  width="114" selectedbkcolor="0xff4cb4e7" group="UIS"/>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="0xfff2efe6">
+      <TabLayout name="uis_tab">
+        <HorizontalLayout>
+          <Text text="hello"/>
+          <Text text="55555"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="11111"/>
+          <Text text="22222"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="qqq"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="www"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="heddddllo"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="rrrrrrrrrrr"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="bbbbbbbbbbb"/>
+        </HorizontalLayout>
+      </TabLayout>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="0xffe2dbbe" height="40">
+      <Button name="ui_save" text="确定" bkcolor="0xffffc09f" height="50" width="400"  textcolor="0xff00343f"></Button>
+      <Button name="close_btn" text="取消" bkcolor="0xffffee93" height="50" width="400"  textcolor="0xff00343f"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

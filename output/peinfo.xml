@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="800,420"  caption="0,0,0,60" sizebox="8,8,8,8" roundcorner="8,8" > <!--caption 会影响控件的鼠标点击事件-->
+  <VerticalLayout>
+    <HorizontalLayout bkcolor="0xffe2dbbe" height="40">
+      <Button bindtabindex="0" text="概要" bindtablayoutname="pe_tab" width="114" selected="true" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="1" text="数据目录" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="2" text="节表" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="3" text="导入表" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="4" text="导出表" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="5" text="资源表" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+      <Button bindtabindex="6" text="TLS表" bindtablayoutname="pe_tab" width="114" selectedbkcolor="0xff4cb4e7" group="PEG"/>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="0xfff2efe6">
+      <TabLayout name="pe_tab">
+        <VerticalLayout>
+          <HorizontalLayout height="30">
+            <Text text="入口点" padding="10,10,0,0" width="80" />
+            <Edit name="pe_entrance" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="节表数目" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_numofsec" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="可选头部大小" padding="100,10,0,0" width="80" />
+            <Edit text="" name="pe_optionh" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="镜像基址" padding="10,10,0,0" width="80" />
+            <Edit text="" name="pe_imagebase" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="镜像大小" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_imagesize" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="RVA数及大小" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_numofrva" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="代码基址" padding="10,10,0,0" width="80" />
+            <Edit text="" name="pe_codebase" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="数据基址" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_database" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="头部大小" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_headsize" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="块对齐" padding="10,10,0,0" width="80" />
+            <Edit text="" name="pe_bkalign" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="文件块对齐" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_filealign" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+            <Text text="校验和" padding="100,10,0,0" width="80"/>
+            <Edit text="" name="pe_checksum" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="机器类型" padding="10,10,0,0" width="80"/>
+            <Combo text="" name="pe_machn" padding="0,5,10,0" vscrollbar="true" width="270" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" textpadding="5,0,0,0">
+              <ListLabelElement text=" 0x0 适用于任何类型处理器"/>
+              <ListLabelElement text=" 0x1d3 Matsushita AM33处理器"/>
+              <ListLabelElement text=" 0x8664 x64处理器"/>
+              <ListLabelElement text=" 0x1c0 ARM小尾处理器"/>
+              <ListLabelElement text=" 0xebc EFI字节码处理器"/>
+              <ListLabelElement text=" 0x14c Intel 386或后继处理器及其兼容处理器"/>
+              <ListLabelElement text=" 0x200 Intel Itanium处理器家族"/>
+              <ListLabelElement text=" 0x9041 Mitsubishi M32R小尾处理器"/>
+              <ListLabelElement text=" 0x266 MIPS16处理器"/>
+              <ListLabelElement text=" 0x366 带FPU的MIPS处理器"/>
+              <ListLabelElement text=" 0x466 带FPU的MIPS16处理器"/>
+              <ListLabelElement text=" 0x1f0 PowerPC小尾处理器"/>
+              <ListLabelElement text=" 0x1f1 带符点运算支持的PowerPC处理器"/>
+              <ListLabelElement text=" 0x166 MIPS 小尾处理器"/>
+              <ListLabelElement text=" 0x1a2 Hitachi SH3处理器"/>
+              <ListLabelElement text=" 0x1a3 Hitachi SH3 DSP处理器"/>
+              <ListLabelElement text=" 0x1a6 Hitachi SH4处理器"/>
+              <ListLabelElement text=" 0x1a8 Hitachi SH5处理器"/>
+              <ListLabelElement text=" 0x1c2 Thumb处理器"/>
+              <ListLabelElement text=" 0x169 MIPS小尾WCE v2处理器"/>
+              <ListLabelElement text="" selected="true"/>
+            </Combo>
+            <Text text="标志字" padding="40,10,0,0" width="80"/>
+            <Combo  name="pe_charater" padding="0,5,10,0" vscrollbar="true" width="270" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" textpadding="5,0,0,0">
+              <ListLabelElement name="pe_c_0" text="" selected="true"/>
+              <ListLabelElement bkcolor1="0xff123456"  name="pe_c_1" leftbordersize="3" text=" 0x0001 " tooltip="仅适用于映像文件，适用于 Windows CE、Microsoft Windows NT® 及其后继操作系统。它表明此文件不包含基址重定位信息，因此必须被加载到其首选基地址上。如果基地址不可用，加载器会报错。链接器默认会移除可执行（EXE）文件中的重定位信息。"/>
+              <ListLabelElement name="pe_c_2" text=" 0x0002 可执行映像" tooltip="仅适用于映像文件。它表明此映像文件是合法的，可以被运行。如果未设置此标志，表明出现了链接器错误。"/>
+              <ListLabelElement name="pe_c_3" text=" 0x0004 无COFF行号信息" tooltip="COFF行号信息已经被移除。不赞成使用此标志，它应该为0。"/>
+              <ListLabelElement name="pe_c_4" text=" 0x0008 无COFF局部符号信息" tooltip="COFF符号表中有关局部符号的项已经被移除。不赞成使用此标志，它应该为0。"/>
+              <ListLabelElement name="pe_c_5" text=" 0x0010 调整工作集" tooltip="此标志已经被舍弃。它用于调整工作集。Windows 2000及其后继操作系统不赞成使用此标志，它应该为0。"/>
+              <ListLabelElement name="pe_c_6" text=" 0x0020 可处理大于2GB内存" tooltip="应用程序可以处理大于2GB的地址。"/>
+              <ListLabelElement name="pe_c_7" text=" 0x0040 保留" tooltip="此标志保留供将来使用。"/>
+              <ListLabelElement name="pe_c_8" text=" 0x0080 小端内存" tooltip="小尾：在内存中，最不重要位（LSB）在最重要位（MSB）前面。不赞成使用此标志，它应该为0。"/>
+              <ListLabelElement name="pe_c_9" text=" 0x0100 32位架构" tooltip="机器类型基于32位字体系结构。"/>
+              <ListLabelElement name="pe_c_10" text=" 0x0200 无调试信息" tooltip="调试信息已经从此映像文件中移除。"/>
+              <ListLabelElement name="pe_c_11" text=" 0x0400 可移动文件完全复制" tooltip="如果此映像文件在可移动介质上，完全加载它并把它复制到交换文件中。"/>
+              <ListLabelElement name="pe_c_12" text=" 0x0800 网络文件完全复制" tooltip="如果此映像文件在网络介质上，完全加载它并把它复制到交换文件中。"/>
+              <ListLabelElement name="pe_c_13" text=" 0x1000 系统文件" tooltip="此映像文件是系统文件，而不是用户程序。"/>
+              <ListLabelElement name="pe_c_14" text=" 0x2000 DLL文件" tooltip="此映像文件是动态链接库（DLL）。这样的文件总被认为是可执行文件，尽管它们并不能直接被运行。"/>
+              <ListLabelElement name="pe_c_15" text=" 0x4000 单处理器" tooltip="此文件只能运行于单处理器机器上。"/>
+              <ListLabelElement name="pe_c_16" text=" 0x8000 大端" tooltip="大尾：在内存中，MSB在LSB前面。不赞成使用此标志，它应该为0。"/>
+            </Combo>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="子系统" padding="10,10,0,0" width="80"/>
+            <Combo text="" name="pe_subsystem" padding="0,5,10,0" vscrollbar="true" width="270" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" textpadding="5,0,0,0">
+              <ListLabelElement text=" 0 未知子系统"/>
+              <ListLabelElement text=" 1 设备驱动程序和Native Windows进程"/>
+              <ListLabelElement text=" 2 Windows图形用户界面（GUI）子系统"/>
+              <ListLabelElement text=" 3 Windows字符模式（CUI）子系统"/>
+              <ListLabelElement text=" 7 Posix字符模式子系统"/>
+              <ListLabelElement text=" 9 Windows CE"/>
+              <ListLabelElement text=" 10 可扩展固件接口（EFI）应用程序"/>
+              <ListLabelElement text=" 11 带引导服务的EFI驱动程序"/>
+              <ListLabelElement text=" 12 带运行时服务的EFI驱动程序"/>
+              <ListLabelElement text=" 13 EFI ROM映像"/>
+              <ListLabelElement text=" 14 XBOX"/>
+              <ListLabelElement text="" selected="true"/>
+            </Combo>
+          </HorizontalLayout>
+          <HorizontalLayout height="30">
+            <Text text="时间标志" padding="10,10,0,0" width="80"/>
+            <DateTime text="" name="pe_datetime" padding="0,5,10,0" width="270" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout>
+          <List name="pe_datadirlist" menu="true" itemvlinesize="2" itemvlinecolor="0xffffffff" padding="20,5,20,15">
+            <ListHeaderItem text="目录名称" width="300" bkcolor="0xffffc09f" height="0" />
+            <ListHeaderItem text="偏移地址" width="250" bkcolor="0xffffc09f" height="0" />
+            <ListHeaderItem text="目录大小" width="250" bkcolor="0xffffc09f" height="0" />
+          </List>
+        </VerticalLayout>
+        <List name="pe_seglist" menu="true" vscrollbar="true" itemvlinesize="2" itemvlinecolor="0xffffffff" padding="20,5,20,15">
+          <ListHeaderItem text="段名称" bkcolor="0xffffc09f" width="130" height="0" />
+          <ListHeaderItem text="内存偏移" bkcolor="0xffffc09f" width="130" height="0" />
+          <ListHeaderItem text="内存大小" bkcolor="0xffffc09f" width="130" height="0" />
+          <ListHeaderItem text="文件偏移" bkcolor="0xffffc09f" width="130" height="0" />
+          <ListHeaderItem text="文件大小" bkcolor="0xffffc09f" width="130" height="0" />
+          <ListHeaderItem text="区段属性" bkcolor="0xffffc09f" width="130" height="0" />
+        </List>
+        <HorizontalLayout>
+          <List name="pe_impdll" menu="true" vscrollbar="true" header="false" itemvlinesize="1" itemvlinecolor="0xffffffff" width="160" bordersize="1" bordercolor="0xffffffff" padding="10,10,0,10" >
+            <ListHeader>
+            <ListHeaderItem text="DLL名称" height="0" bkcolor="0xffffc09f"/>
+            </ListHeader>
+          </List>
+            <List name="pe_impfunc" menu="true" vscrollbar="true" itemvlinesize="1" itemvlinecolor="0xffffffff"  bordersize="1" bordercolor="0xffffffff" padding="5,10,10,10" >
+              <ListHeaderItem text="API名称" width="160" height="0" />
+              <ListHeaderItem text="Thunk RVA" width="100" height="0" />
+              <ListHeaderItem text="Thunk偏移" width="100" height="0" />
+              <ListHeaderItem text="ThunkValue" width="100" height="0" />
+              <ListHeaderItem text="序号" width="100" height="0" />
+            </List>
+        </HorizontalLayout>
+        <VerticalLayout>
+          <HorizontalLayout bordersize="1" bordercolor="0xffffffff" padding="5,10,10,10" height="100">
+            <VerticalLayout>
+              <HorizontalLayout height="30">
+                <Text text="特征值" padding="10,10,0,0" width="80" />
+                <Edit text="" name="PI_E_ENTRANCE" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="函数个数" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_SUBSYSTEM" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="名称地址" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_NUMOFSECTION" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+              </HorizontalLayout>
+              <HorizontalLayout height="30">
+                <Text text="日期标志" padding="10,10,0,0" width="80" />
+                <Edit text="" name="PI_E_ENTRANCE" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="名称个数" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_SUBSYSTEM" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="名称序数地址" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_NUMOFSECTION" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+              </HorizontalLayout>
+              <HorizontalLayout height="30">
+                <Text text="基址" padding="10,10,0,0" width="80" />
+                <Edit text="" name="PI_E_ENTRANCE" padding="0,5,0,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="函数地址" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_SUBSYSTEM" padding="0,5,10,0" width="100" bordersize="1"  bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+                <Text text="名称" padding="100,10,0,0" width="80"/>
+                <Edit text="" name="PI_E_NUMOFSECTION" padding="0,5,10,0" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+              </HorizontalLayout>
+            </VerticalLayout>
+          </HorizontalLayout>
+          <List name="PEINFO_EXPORTTFUNCLIST" menu="true" vscrollbar="true" itemvlinesize="1" itemvlinecolor="0xffffffff"  bordersize="1" bordercolor="0xffffffff" padding="5,0,10,10" >
+            <ListHeaderItem text="API序号" width="180" height="0" />
+            <ListHeaderItem text="RVA" width="180" height="0" />
+            <ListHeaderItem text="偏移" width="180" height="0" />
+            <ListHeaderItem text="函数名称" width="200" height="0" />
+          </List>
+        </VerticalLayout>
+        <VerticalLayout>
+        </VerticalLayout>
+        <VerticalLayout>
+        </VerticalLayout>
+        <VerticalLayout>
+        </VerticalLayout>
+      </TabLayout>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="0xffe2dbbe" height="40">
+      <Button name="browser_pe" text="浏览磁盘文件" bkcolor="0xffffc09f" height="50" width="200"  textcolor="0xff00343f"></Button>
+      <Button name="PEINFO_READFROMDEBUGGED" text="读取调试文件" bkcolor="0xffffee93" height="50" width="200"  textcolor="0xff00343f"></Button>
+      <Button name="refresh_pe" text="重新读取" bkcolor="0xffffc09f" height="50" width="200"  textcolor="0xff00343f"></Button>
+      <Button name="close_btn" text="关闭" bkcolor="0xfff17c67" height="50" width="200"  textcolor="0xff00343f"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="600,500" sizebox="8,8,8,8" caption="0,0,0,60" roundcorner="8,8">
+  <Image shared="true" name="scrollbar.bmp" />
+  <Include source="scrollbar.xml" />
+  <VerticalLayout>
+    <HorizontalLayout height="50" bkcolor="0xff407d94">
+      <Button text="内存窗口" mouse="false"  textcolor="0xdddddddd" padding="10,10,0,10" height="30" width="80"></Button>
+      <Button name="close_btn" text="关闭" width="50" height="18" padding="450,30,10,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+    </HorizontalLayout>
+    <HorizontalLayout height="4" bkcolor="0xff407d94" bkcolor2="0xffffffff" padding="0,0,0,0"></HorizontalLayout>
+    <HorizontalLayout  name="disasm_data">
+      <List name="mem_list" menu="true" itemvlinesize="1" itemvlinecolor="0xffbbbbbb" bkcolor="0xffacadac" userdata="mem_list_menu.xml">
+        <ListHeader scaleheader="true" bkcolor="0xffbbbbbb" childpadding="1">
+          <ListHeaderItem scale="20%" text="地址" bkcolor="0xff898989" />
+          <ListHeaderItem scale="20%" text="二进制" bkcolor="0xff898989"/>
+          <ListHeaderItem scale="30%" text="助记符" bkcolor="0xff898989"/>
+          <ListHeaderItem scale="30%" text="注释" bkcolor="0xff898989"/>
+        </ListHeader>
+      </List>
+      <ScrollBar name="DisasmScroll" hor="false" width="15" enabled="true" mouse="true" value="0" range="0"
+                 button1normalimage="file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'"
+                 button1hotimage="file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'"
+                 button1pushedimage="file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'"
+                 button1disabledimage="file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'"
+                 button2normalimage="file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'"
+                 button2hotimage="file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'"
+                 button2pushedimage="file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'"
+                 button2disabledimage="file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'"
+                 thumbnormalimage="file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'"
+                 thumbhotimage="file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'"
+                 thumbpushedimage="file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'"
+                 thumbdisabledimage="file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'"
+                 railnormalimage="file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'"
+                 railhotimage="file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'"
+                 railpushedimage="file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'"
+                 raildisabledimage="file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'"
+                 bknormalimage="file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'"
+                 bkhotimage="file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'"
+                 bkpushedimage="file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'"
+                 bkdisabledimage="file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="800,600" sizebox="8,8,8,8" caption="0,0,0,60" roundcorner="8,8">
+  <Include source="scrollbar.xml" />
+  <VerticalLayout bkcolor="0xffb6d7a8" name="bp_data">
+    <List name="bp_list" menu="true" header="hidden" vscrollbar="true" itemvlinesize="1" itemvlinecolor="0xffffffff">
+      <ListHeaderItem text="" width="100" height="0" />
+      <ListHeaderItem text="" width="100" height="0" />
+      <ListHeaderItem text="" width="160" height="0" />
+    </List>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="600,340"  caption="0,0,0,100" sizebox="8,8,8,8" roundcorner="8,8">
+  <VerticalLayout bkcolor="0xffacadac">
+    <HorizontalLayout height="50" bkcolor="0xff407d94">
+      <Button text="打开文件" mouse="false"  textcolor="0xdddddddd" padding="10,10,0,10" height="30" width="80"></Button>
+      <Button name="close_btn" text="关闭" width="50" height="18" padding="450,30,10,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+    </HorizontalLayout>
+    <HorizontalLayout height="4" bkcolor="0xff407d94" bkcolor2="0xffffffff" padding="0,0,0,0"/>
+    <HorizontalLayout height="30" padding="0,20,0,0" >
+      <Label text="路径" padding="20,0,10,0" width="30" textcolor="0xff00343f"/>
+      <RichEdit name="browser_edit" width="520" border="3" borderround="2,2" bkcolor="0xffffffff" />
+    </HorizontalLayout>
+    <HorizontalLayout height="100" padding="0,20,0,0">
+      <Label text="参数" padding="20,0,10,0" width="30" textcolor="0xff00343f"/>
+      <HorizontalLayout padding="0,0,20,0" bkcolor="0xffffffff" >
+        <RichEdit name="parameter_edit" height="100"  border="3" borderround="2,2" multiline="true" padding="5,5,5,5"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <Text name="warning_edit" textcolor="0xffe03636" text=" " height="30" padding="20,20,20,0"></Text>
+    <HorizontalLayout padding="20,20,20,10" bkcolor="0xffe2dbbe" height="40">
+      <Button name="browser_btn" text="浏览文件" bkcolor="0xff407d94" height="50" width="188"  textcolor="0x66ffffff"></Button>
+      <VerticalLayout width="1" bkcolor="0x66ccccc"/>
+      <Button name="start_btn" text="开始调试" bkcolor="0xff407d94" height="50" width="188"  textcolor="0x66ffffff"></Button>
+      <VerticalLayout width="1" bkcolor="0x66ccccc"/>
+      <Button name="close_btn" text="取消" bkcolor="0xff407d94" height="50" width="188"  textcolor="0x66ffffff"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

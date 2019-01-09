@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="600,500" sizebox="8,8,8,8" caption="0,0,0,60" roundcorner="8,8">
+  <VerticalLayout bkcolor="0xffacadac">
+    <HorizontalLayout height="50" bkcolor="0xff407d94">
+      <Button text="附加进程" mouse="false"  textcolor="0xdddddddd" padding="10,10,0,10" height="30" width="80"></Button>
+      <Button name="close_btn" text="关闭" width="50" height="18" padding="450,30,10,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+    </HorizontalLayout>
+    <HorizontalLayout  height="50" padding="0,10,0,0">
+      <Edit  name="ATTACHWND_FILTER_STR" text="" padding="30,10,0,0" height="30" width="500" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7"/>
+      <Button name="ATTACHWND_REFRESH" text="刷新进程"  padding="80,10,0,0" width="150" height="30" bkcolor="0xffffc09f" textcolor="0xff00343f"></Button>
+    </HorizontalLayout>
+    <TreeView vscrollbar="true" visiblefolderbtn="true">
+      <TreeNode text="A1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+        <TreeNode text="B1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+          <TreeNode text="C1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+            <TreeNode text="D1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+              <Button text="扩展按钮" width="100" />
+            </TreeNode>
+            <Button text="扩展按钮" width="100" />
+          </TreeNode>
+          <Edit text="扩展文本框" tipvalue="扩展文本框" width="100" />
+        </TreeNode>
+        <Edit text="扩展文本框" tipvalue="扩展文本框" width="100" />
+      </TreeNode>
+      </TreeView>
+    <HorizontalLayout padding="20,20,20,10" bkcolor="0xffe2dbbe" height="40">
+      <Button name="attach_btn" text="开始调试" bkcolor="0xff407d94" height="50" width="279"  textcolor="0x66ffffff"></Button>
+      <VerticalLayout width="1" bkcolor="0x66ccccc"/>
+      <Button name="close_btn" text="取消" bkcolor="0xff407d94" height="50" width="280"  textcolor="0x66ffffff"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

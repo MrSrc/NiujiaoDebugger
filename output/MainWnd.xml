@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window  sizebox="8,8,8,8" caption="0,0,0,60" roundcorner="8,8" >
+  <Include source="scrollbar.xml" />
+  <VerticalLayout padding="40,0,0,6" bkcolor="0x66595959">
+    <HorizontalLayout height="40" name="caption"  mouse="true">
+      <Button bkcolor="0xffffffff" text="牛角调试器" textcolor="0x88000000" width="80" padding="5,5,360,5" mouse="false"/>
+      <Button bindtabindex="0" text="主窗口" borderround="2,2" width="80" padding="5,10,0,5" bindtablayoutname="main_tab" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567" />
+      <Button bindtabindex="1" text="图标主窗口" borderround="2,2" width="80" padding="5,10,0,5" bindtablayoutname="main_tab" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567" />
+      <Button bindtabindex="2" text="工作界面" borderround="2,2" width="80" padding="5,10,0,5" bindtablayoutname="main_tab" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567" />
+      <HorizontalLayout height="40"  padding="225,0,0,0" >
+        <Button name="main_restore" text="恢复" width="50" height="18" padding="5,18,0,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+        <Button name="main_min" text="最小" width="50" height="18" padding="5,18,0,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+        <Button name="main_max"  text="最大" width="50" height="18" padding="5,18,0,0"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+        <Button name="main_close" text="关闭" width="50" height="18" padding="5,18,10,"  borderround="2,2" bkcolor="0x88808080" textcolor="0x88ffffff" bordersize="1" bordercolor="0x88ffffff" hottextcolor="0x88de4567"></Button>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout height="6" bkcolor="0xff595959" bkcolor2="0xffaaaaaa" padding="0,0,0,0" />
+    <HorizontalLayout  >
+      <TabLayout name="main_tab" >
+        <VerticalLayout name="主窗口" vscrollbar="true" >
+          <HorizontalLayout height="30"></HorizontalLayout>
+          <HorizontalLayout height="400">
+            <VerticalLayout width="80"/>
+            <VerticalLayout width="280" padding="30,5,0,0" bordercolor="0x44ffffff" bkcolor="0x44b0b0b0" bordersize="1">
+              <Text text="调试" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="sub_wnd" text="打开文件" userdata="openfile.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="sub_wnd" text="附加进程" userdata="attachproc.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="function" text="重新开始" userdata="restart" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="function" text="单步" userdata="singlestep" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="function" text="暂停" userdata="suspend"  height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xff56a36c" name="function" text="停止" userdata="stop" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <Text text="窗口" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button  padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="日志" userdata="logwnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button  padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="反汇编" userdata="disasmwnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button  padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="堆栈" userdata="memwnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <HorizontalLayout height="50">
+                <Button   padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="内存" userdata="memwnd.xml" height="25" width="80"  bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button   padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="模块" userdata="modulewnd.xml" height="25" width="80"  bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button   padding="10,10,0,5" bkcolor="0xff5e8579" name="sub_wnd" text="寄存器" userdata="registerwnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5"  bkcolor="0xff5e8579" name="sub_wnd" text="线程" userdata="threadwnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5"  bkcolor="0xff5e8579" name="sub_wnd" text="句柄" userdata="handlewnd.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5"  bkcolor="0xff5e8579" name="sub_wnd" text="汇编测试" userdata="testasm.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout width="280" padding="30,5,0,0"  bordercolor="0x44ffffff" bkcolor="0x44b0b0b0" bordersize="1">
+              <Text text="组件" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0xffdb9c4f" name="soft_bp" text="内存断点" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xffdb9c4f" name="hardware_bp" text="硬件断点" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xffdb9c4f" name="py_console" text="python控制台" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <HorizontalLayout height="50">
+                <Button  padding="10,10,0,5" bkcolor="0xffdb9c4f" name="sub_wnd" text="PE信息"  userdata="peinfo.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button  padding="10,10,0,5" bkcolor="0xffdb9c4f" name="mem_search" text="内存搜索" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button  padding="10,10,0,5" bkcolor="0xffdb9c4f" name="mem_search" text="代码注入" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+              <Text text="工具" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0xffde4567" name="command" userdata="notepad" text="笔记本" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xffde4567" name="command" userdata="calc" text="计算器" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0xffde4567" name="command" userdata="cmd" text="命令行" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout width="280" padding="30,5,0,0" bordercolor="0x44ffffff" bkcolor="0x44b0b0b0" bordersize="1">
+              <Text text="设置" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0x8877c34f" name="DbgSetting" text="调试设置" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0x8877c34f" name="sub_wnd" text="界面设置" userdata="uisetting.xml" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0x8877c34f" name="help_wnd" text="快捷键设置" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+
+              <HorizontalLayout height="50"/>
+              <Text text="其他" height="25" padding="130,10,0,0" textcolor="0x44ffffff"/>
+              <HorizontalLayout height="50">
+                <Button padding="10,10,0,5" bkcolor="0x882e68aa" name="help_wnd" text="帮助" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+                <Button padding="10,10,0,5" bkcolor="0x882e68aa" name="about_wnd" text="关于" height="25" width="80" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+              </HorizontalLayout>
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="主窗口2" vscrollbar="true" height="600">
+          <HorizontalLayout height="60"></HorizontalLayout>
+          <HorizontalLayout height="60">
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="660,0,0,0" bkcolor="0xfff5a433" name="DbgSetting" text="调试设置" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="360,0,0,0" bkcolor="0xfff7c482" name="help_wnd" text="帮助" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="180,0,0,0" bkcolor="0xfff5a433" name="sub_wnd" text="界面设置" userdata="uisetting.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xfff5a433" name="command" userdata="calc" text="计算器" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="360,0,0,0" bkcolor="0xfff7c482" name="about_wnd" text="关于" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button   padding="0,0,0,0" bkcolor="0xff1Db0b8" name="sub_wnd" text="模块" userdata="modulewnd.xml" height="60" width="60"  bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xff1Db0b8" name="sub_wnd" text="反汇编" userdata="disasmwnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button   padding="0,0,0,0" bkcolor="0xff1Db0b8" name="sub_wnd" text="数据" userdata="memwnd.xml" height="60" width="60"  bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xfff5a433" name="command" userdata="cmd" text="命令行" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xffe6109b" name="mem_search" text="代码注入" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xffe6109b" name="command" userdata="notepad" text="笔记本" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="360,0,0,0" bkcolor="0xfff7c482" name="" text="" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff" mouse="false"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xffC1194e" name="sub_wnd" text="堆栈" userdata="memwnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button   padding="0,0,0,0" bkcolor="0xff1Db0b8" name="sub_wnd" text="寄存器" userdata="registerwnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff56a36c" name="function" text="重新开始" userdata="restart" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xffe6109b" name="sub_wnd" text="PE信息"  userdata="peinfo.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xffe6109b" name="mem_search" text="内存搜索" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="360,0,0,0" bkcolor="0xfff7c482" name="help_wnd" text="快捷键设置" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button  padding="0,0,0,0" bkcolor="0xffC1194e" name="sub_wnd" text="日志" userdata="logwnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff56a36c" name="sub_wnd" text="打开文件" userdata="openfile.xml" height="60" width="60"  bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff56a36c" name="sub_wnd" text="附加进程" userdata="attachproc.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff080d5e" name="soft_bp" text="内存断点" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff080d5e" name="hardware_bp" text="硬件断点" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+            <Button padding="420,0,0,0" bkcolor="0xffC1194e" name="function" text="暂停" userdata="suspend"  height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xffC1194e" name="function" text="停止" userdata="stop" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0" bkcolor="0xff56a36c" name="function" text="单步" userdata="singlestep" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0"  bkcolor="0xff080d5e" name="sub_wnd" text="线程" userdata="threadwnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+            <Button padding="0,0,0,0"  bkcolor="0xff080d5e" name="sub_wnd" text="句柄" userdata="handlewnd.xml" height="60" width="60" bordersize="1" bordercolor="0x88ffffff" textcolor="0x88ffffff"></Button>
+          </HorizontalLayout>
+          <HorizontalLayout height="60">
+          </HorizontalLayout>
+          <HorizontalLayout height="60"></HorizontalLayout>
+          <HorizontalLayout height="60"></HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="工作界面" vscrollbar="true" >
+          <HorizontalLayout height="50"></HorizontalLayout>
+          <HorizontalLayout height="400">
+            <VerticalLayout width="300"></VerticalLayout>
+            <VerticalLayout  name="disasm_data" width="600">
+              <List name="disasm_list" menu="true" itemvlinesize="1" itemvlinecolor="0xffbbbbbb" bkcolor="0xffacadac" vscrollbar="true"  virtuallist="true" inset="4,2,4,2" userdata="disasm_list_menu.xml">
+                <ListHeader scaleheader="true"  bkcolor="0xffbbbbbb" childpadding="1">
+                  <ListHeaderItem scale="20%" text="地址" bkcolor="0xff898989" />
+                  <ListHeaderItem scale="20%" text="二进制" bkcolor="0xff898989"/>
+                  <ListHeaderItem scale="40%" text="助记符" bkcolor="0xff898989"/>
+                  <ListHeaderItem scale="20%" text="注释" bkcolor="0xff898989"/>
+                </ListHeader>
+              </List>
+            </VerticalLayout>       
+          </HorizontalLayout>
+        </VerticalLayout>
+      </TabLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

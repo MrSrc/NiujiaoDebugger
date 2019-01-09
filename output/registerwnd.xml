@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window  size="550,480" caption="0,0,0,100" sizebox="8,8,8,8" roundcorner="8,8">
+  <VerticalLayout bkcolor="0xfffff2cc">
+    <HorizontalLayout height="50"  bordersize="1" bordercolor="0xffffffff"  padding="15,10,10,0" name="THREAD_ZONE" >
+    </HorizontalLayout>
+    <HorizontalLayout height="370"  >
+      <VerticalLayout  width="160" bordersize="1" bordercolor="0xffffffff"  padding="15,10,0,0">
+        <HorizontalLayout height="40"  >
+          <Text text="EIP" padding="10,10,0,10" width="30" />
+          <Edit name="REG_eip" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40"  >
+          <Text text="eax" padding="10,10,0,10" width="30" />
+          <Edit name="REG_eax" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="ebx" padding="10,10,0,10" width="30"/>
+          <Edit name="REG_ebx" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="ecx" padding="10,10,0,10" width="30" />
+          <Edit name="REG_ecx" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="edx" padding="10,10,0,10" width="30" />
+          <Edit name="REG_edx" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="esp" padding="10,10,0,10" width="30" />
+          <Edit name="REG_esp" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="ebp" padding="10,10,0,10" width="30" />
+          <Edit name="REG_ebp" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="esi" padding="10,10,0,10" width="30" />
+          <Edit name="REG_esi" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="edi" padding="10,10,0,10" width="30" />
+          <Edit name="REG_edi" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout >
+          <HorizontalLayout height="70" width="175"  bordersize="1" bordercolor="0xffffffff"  padding="15,10,0,0">
+            <Text text="C" padding="10,10,0,5" width="12" />
+            <Text text="P" padding="10,10,0,5" width="12" />
+            <Text text="A" padding="10,10,0,5" width="12" />
+            <Text text="Z" padding="10,10,0,5" width="12" />
+            <Text text="S" padding="10,10,0,5" width="12" />
+            <Text text="T" padding="10,10,0,5" width="12" />
+            <Text text="D" padding="10,10,0,5" width="12" />
+          </HorizontalLayout>
+        <VerticalLayout  width="175"  bordersize="1" bordercolor="0xffffffff"  padding="15,10,0,0">
+          <HorizontalLayout height="40"  >
+            <Text text="ES" padding="10,10,0,10" width="30" />
+            <Edit name="REG_ES" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="40" >
+            <Text text="CS" padding="10,10,0,10" width="30"/>
+            <Edit name="REG_CS" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="40" >
+            <Text text="SS" padding="10,10,0,10" width="30" />
+            <Edit name="REG_SS" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="40" >
+            <Text text="DS" padding="10,10,0,10" width="30" />
+            <Edit name="REG_DS" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="40" >
+            <Text text="FS" padding="10,10,0,10" width="30" />
+            <Edit name="REG_FS" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="40" >
+            <Text text="GS" padding="10,10,0,10" width="30" />
+            <Edit name="REG_GS" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout  width="160"  bordersize="1" bordercolor="0xffffffff"  padding="15,10,10,0">
+        <HorizontalLayout height="40"  >
+          <Text text="Dr0" padding="10,10,0,10" width="30" />
+          <Edit name="REG_dr0" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="Dr1" padding="10,10,0,10" width="30"/>
+          <Edit name="REG_dr1" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="Dr2" padding="10,10,0,10" width="30" />
+          <Edit name="REG_dr2" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="Dr3" padding="10,10,0,10" width="30" />
+          <Edit name="REG_dr3" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="Dr6" padding="10,10,0,10" width="30" />
+          <Edit name="REG_dr6" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="40" >
+          <Text text="Dr7" padding="10,10,0,10" width="30" />
+          <Edit name="REG_dr7" padding="10,5,0,10" width="100" bordersize="1" bordercolor="0xffffc09f" focusbordercolor="0xff4cb4e7" align="right"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="0xffe2dbbe" height="40" padding="0,10,0,0">
+      <Button name="min_btn" text="最小化" bkcolor="0xffffc09f" height="50" width="275"  textcolor="0xff00343f"></Button>
+      <Button name="close_btn" text="关闭" bkcolor="0xffffee93" height="50" width="275"  textcolor="0xff00343f"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
